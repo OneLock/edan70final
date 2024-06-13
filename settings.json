@@ -1,0 +1,18 @@
+[
+    {
+    "debug": true,
+    "scraper": {
+        "url": "https://runeberg.org/",
+        "rootdir": "data/nf/",
+        "edition": "2"
+        },
+        
+    "segmenter": {
+        "input_dir": "data/nf/2",
+        "toc_file":"data/json/toc/toc.json",
+        "segmentedDirectory":"data/json/nf/2",
+        "paragraphIndexesFile":"pIdx.json",
+        "segmentedFile":"e2.json"
+    }
+    }
+]
