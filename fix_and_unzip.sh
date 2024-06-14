@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Check if 'zip' is installed
+if ! command -v zip &> /dev/null; then
+    echo "The 'zip' command is not installed. Please install it."
+    echo "Or use another program of your choice that unzip can unzip multi-archived files."
+    exit 1
+fi
+
+
 # Function to fix and unzip a multipart ZIP file
 fix_and_unzip() {
     local input_zip="$1"
