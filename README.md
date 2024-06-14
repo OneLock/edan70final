@@ -14,17 +14,5 @@ zipped_files
     |   ...
     |   model_split.zip
 ``` 
-1. Navigate to `zipped_files` directory 
-1. **Fix the Archive:**
-   - Use the following command to repair the archive:
-     ```bash
-     $ zip -FF data.zip --out data_single.zip
-     ```
-2. **Unzip the Result:**
-   - After fixing the archive, you can extract its contents.
-   - Execute the following command to unzip the repaired archive into a temporary directory (e.g., `./temp`):
-     ```bash
-     $ unzip data_single.zip -d 
-     ```
-   - The `-d` flag specifies the target directory where the extracted files will be placed.
+- From the project folder run the `fix_and_unzip.sh` script to unzip the `data` and `model` directories
 ---
