@@ -11,7 +11,7 @@ fi
 # Function to fix and unzip a multipart ZIP file
 fix_and_unzip() {
     local input_zip="$1"
-    local output_dir="$2"
+    local output_dir=$(pwd)
 
     # Fix the multipart ZIP file using zip -FF
     zip -FF "$input_zip" --out "${input_zip%.zip}_single.zip"
@@ -24,13 +24,15 @@ fix_and_unzip() {
 cd zipped_files/data
 
 # Fix and unzip data.zip
-fix_and_unzip data.zip ../../
+fix_and_unzip data.zip
+mv data ../../
 
 # Navigate to the models directory
 cd ../models
 
 # Fix and unzip model_split.zip
-fix_and_unzip model_split.zip ../../
+fix_and_unzip model_split.zip
+mv model ../../
 
 cd ../../
-rm -rf zipped_file
+rm -rf zipped_files
