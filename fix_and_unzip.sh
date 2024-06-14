@@ -13,7 +13,7 @@ fix_and_unzip() {
 }
 
 # Navigate to the directory containing the zipped files
-cd zipped_file/model_split
+cd zipped_files/model_split
 
 # Fix and unzip data.zip
 fix_and_unzip data.zip ../../
@@ -23,3 +23,6 @@ cd ../models
 
 # Fix and unzip model_split.zip
 fix_and_unzip model_split.zip ../../
+
+cd ../../
+rm -rf zipped_file
