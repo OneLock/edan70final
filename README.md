@@ -1,4 +1,4 @@
-# Extracting Multi-File Archives
+# Extracting The Multi-File Archived Files
 ```
 zipped_files
 │
@@ -14,7 +14,7 @@ zipped_files
     |   ...
     |   model_split.zip
 ``` 
-
+1. Navigate to `zipped_files` directory 
 1. **Fix the Archive:**
    - Use the following command to repair the archive:
      ```bash
