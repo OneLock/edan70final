@@ -21,7 +21,7 @@ fix_and_unzip() {
 }
 
 # Navigate to the directory containing the zipped files
-cd zipped_files/model_split
+cd zipped_files/data
 
 # Fix and unzip data.zip
 fix_and_unzip data.zip ../../
