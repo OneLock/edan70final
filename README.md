@@ -13,6 +13,13 @@ zipped_files
     |   model_split.z02
     |   ...
     |   model_split.zip
-``` 
-- From the project folder run the `fix_and_unzip.sh` script to unzip the `data` and `model` directories
----
+```
+From the project folder run do the follwoing steps to unzip the `data` and `model` directories:
+1. Give excute rights:
+   ```
+   chmod 744 fix_and_unzip.sh
+   ```
+2. run script
+   ```
+   ./fix_and_unzip.sh
+   ```
