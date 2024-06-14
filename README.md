@@ -1,4 +1,5 @@
 # Extracting Multi-File Archives
+```
 zipped_files
 │
 ├───data
@@ -12,7 +13,7 @@ zipped_files
     |   model_split.z02
     |   ...
     |   model_split.zip
-    
+``` 
 
 1. **Fix the Archive:**
    - Use the following command to repair the archive:
